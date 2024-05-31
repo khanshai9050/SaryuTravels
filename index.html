@@ -1,0 +1,899 @@
+<html>
+<head>
+	<!--cdn for bootstrap css-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+		<!---cdn for font awesome-->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!--external css-->
+		<link href="Style.css" rel="stylesheet"/>
+
+<!--bootstrap js cdn--->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+		<!--google font link-->
+		<link href='https://fonts.googleapis.com/css?family=Style Script' rel='stylesheet'>
+		<!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+      <!--=============== CarSlider SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CarSlider CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+		<!--meta link--->
+		    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	 <!--preloader-->
+	<div id="preloader"></div>
+	<!--end preloader-->
+	
+	<!--div for top to up button-->
+<button onclick="topFunction()" id="myScrollToTopBtn" title="Go to top"><i class="fa-solid fa-arrows-up-to-line"></i></button>
+<!---end of top to up button--->
+
+<!--upper header-->
+<div class='container-fluid'>
+	<div class='row UpperHeader'>
+		<div class='col-7'>
+			<a href='tel:07942691254' class="fa-solid fa-phone Footerlink mt-2"></a>&ensp;
+			<a href='mailto:info@saryutravels.com' class="fa-solid fa-envelope Footerlink"></a>&ensp;
+			<a href='#' class="fa-brands fa-whatsapp Footerlink"></a>&ensp;
+			<a href='#' class="fa-brands fa-facebook Footerlink mt-3"></a>&ensp;
+		<a href='#' class="fa-brands fa-instagram Footerlink"></a>
+			</div>
+		<div class='col-5'>
+			<a href='Cab.html'><div class='btn btn-light mt-1' style='float:right;'><i class="fa-solid fa-thumbs-up"></i> Book Cab</div></a>
+			</div>
+		</div>
+	</div>
+<!--end of upper header-->
+
+	<!--- header-->
+		<div class="container-fluid sticky-top">
+					<!--navbar-->
+		<div class="row">
+			<div class=""  style="padding:0 !important">
+				<nav class="navbar navbar-expand-lg navbar-light" style="background:white;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+						<img src="Images/logo.png" class="LogoImg"/>
+						<!-- Offcanvas toggle button (visible on all screen sizes) -->
+						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+							aria-controls="offcanvasExample">
+							<div class="burger" id="burger">
+								<div class="line1"></div>
+								<div class="line2"></div>
+								<div class="line3"></div>
+							</div>
+						</button>
+		
+		<!-- Navbar items -->
+						<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+							<div class="offcanvas-header">
+								<h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+								<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="About.html">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Cab.html">Car Rental</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Tour.html">Tour Plan</a>
+									</li>
+										<li class="nav-item">
+										<a class="nav-link active" href="Hotel.html">Hotel Booking</a>
+									</li>
+										<li class="nav-item">
+										<a class="nav-link active" href="Contact.html">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+		<div class='MenuGap'></div>
+						<!-- Navbar items (visible on larger screens) -->
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav">
+									<li class="nav-item selectedmenu">
+										<a class="nav-link active" aria-current="page" href="index.html">Home&ensp;</a>
+									</li>
+									
+									<li class="nav-item">
+										<a class="nav-link active" href="About.html">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Cab.html">CarRental</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Tour.html">TourPlan</a>
+									</li>
+										<li class="nav-item">
+										<a class="nav-link active" href="Hotel.html">HotelBooking</a>
+									</li>
+										<li class="nav-item">
+										<a class="nav-link active" href="Contact.html">Contact</a>
+									</li>
+								</ul>
+						</div>
+				</nav>
+			</div>
+		</div>
+		</div>
+		<!--end of navbar-->
+		
+<!--carousel-->
+<div class='parent'>
+  <div class='slider'>
+   <button type="button" id='right' class='right' name="button">
+
+       <svg version="1.1" id="Capa_1" width='40px' height='40px ' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+       <g>
+        <path style='fill: #9d9d9d;' d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+          c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
+          "/>
+       </g>
+
+       </svg>
+
+       </button>
+   <button type="button" id='left' class='left' name="button">
+       <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+       <g>
+        <path style='fill: #9d9d9d;' d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+          c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>
+       </g>
+       </svg>
+       </button>
+   <svg id='svg2' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <circle id='circle1' class='circle1 steap' cx="34px" cy="49%" r="20"  />
+      <circle id='circle2' class='circle2 steap' cx="34px" cy="49%" r="100"  />
+      <circle id='circle3' class='circle3 steap' cx="34px" cy="49%" r="180"  />
+      <circle id='circle4' class='circle4 steap' cx="34px" cy="49%" r="260"  />
+      <circle id='circle5' class='circle5 steap' cx="34px" cy="49%" r="340"  />
+      <circle id='circle6' class='circle6 steap' cx="34px" cy="49%" r="420"  />
+      <circle id='circle7' class='circle7 steap' cx="34px" cy="49%" r="500"  />
+      <circle id='circle8' class='circle8 steap' cx="34px" cy="49%" r="580"  />
+      <circle id='circle9' class='circle9 steap' cx="34px" cy="49%" r="660"  />
+    </svg>
+   <svg id='svg1' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <circle id='circle10' class='circle10 steap' cx="648px" cy="49%" r="20"  />
+      <circle id='circle11' class='circle11 steap' cx="648px" cy="49%" r="100"  />
+      <circle id='circle12' class='circle12 steap' cx="648px" cy="49%" r="180"  />
+      <circle id='circle13' class='circle13 steap' cx="648px" cy="49%" r="260"  />
+      <circle id='circle14' class='circle14 steap' cx="648px" cy="49%" r="340"  />
+      <circle id='circle15' class='circle15 steap' cx="648px" cy="49%" r="420"  />
+      <circle id='circle16' class='circle16 steap' cx="648px" cy="49%" r="500"  />
+      <circle id='circle17' class='circle17 steap' cx="648px" cy="49%" r="580"  />
+      <circle id='circle18' class='circle18 steap' cx="648px" cy="49%" r="660"  />
+    </svg>
+   <div id='slide1' class='slide1 up1'></div>
+   <div id='slide2' class='slide2'></div>
+   <div id='slide3' class='slide3'></div>
+   <div id='slide4' class='slide4'></div>
+  </div>
+ </div>
+<!---carousel end-->
+
+<!---about row--->
+<div class="container-fluid IndexAboutImage">
+	<div class="row" style="background-color: #FFFFE0;">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+		<div class="row">
+					<div class="col-lg-6 col-12 mt-5">
+			<img src="Images/Slider6.jpg" style="width:100%;"/>
+			</div>
+		<div class="col-lg-6 mt-5 col-12">
+			<h1 style="font-family:Style Script;font-weight:bold;color:#F2A717; text-decoration: #F2A717 wavy underline;" class="mb-4">Welcome to Saryu Travels</h1>
+			<h4 style=" font-family: cursive;">A Tour & Travel Agency At Ayodhya (Janmbhumi of Prabhu Shree Ram)</h4>
+<h6 style="text-align:justify;line-height:25px;color:grey;"> <span style="color:red;border-bottom:1px solid black;font-size:23px;font-family:sans;">Saryu Travels</span>, we believe in making every journey comfortable, convenient, and memorable. Whether you're traveling for business, leisure, or a special occasion, we have the perfect vehicle to meet your needs. Our first priority is to give the safe and comfortable environment to our customers.<br>
+There are the following services which we offer to our customer :-	</h6>
+	<BR>
+	<div class="row">
+	<div class="col-2">
+	<img src="Images/travel.png"/>
+	</div>
+	<div class="col-10">
+	<h4 style="color:black;font-family:cursive;">Cab Booking Service</h4>
+	<h6>We offer different type of cabs for your trip.</h6>
+	</div>
+	</div>
+	<hr>
+	<div class="row mt-3">
+	<div class="col-2">
+	<img src="Images/walking-tour.png"/>
+	</div>
+	<div class="col-10">
+	<h4 style="color:black;font-family:cursive;">Tour Packages</h4>
+	<h6>We provide multiple tour packages at affordable price.</h6>
+	</div>
+	</div>
+	<hr>
+	<div class="row mt-3">
+		<div class="col-2">
+	<img src="Images/building.png"/>
+	</div>
+	<div class="col-10">
+	<h4 style="color:black;font-family:cursive;">Hotel Booking</h4>
+	<h6>We also provide different star rating hotels to our customers.</h6>
+	</div>
+	</div>
+	
+	<br><br>
+			</div>
+			</div>
+		</div>
+
+		<div class="col-sm-1"></div>
+		</div>
+		<!---end of about row-->
+		
+		<!---div for Car info--->
+		<div class="row mt-5">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div class="row mt-5 text-center">
+					<h6 style="color:grey; font-family: cursive;">Swift and Safe Transportation</h6>
+			<h1 style="font-family:Style Script;font-weight:bold;color:#F2A717;text-decoration: #F2A717 wavy underline;">Our Comfortable Cabs</h1>
+			
+			<div class="col-md-3 col-sm-6 mt-4">
+				<div class="card CarCard">
+  <img src="Images/Car1.jpg" style="width:100%;" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+   <H4 class="card-text">
+		₹ 11 per/KM
+		</H4>
+    <h3 class="card-title">Swift Dzire</h3>
+   
+  </div>
+</div>
+				</div>
+			<div class="col-md-3 col-sm-6 mt-4">
+				<div class="card CarCard">
+  <img src="Images/Car2.jpg" style="width:100%;" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+   <H4 class="card-text">
+		₹ 13 per/KM
+		</H4>
+    <h3 class="card-title">Ertiga</h3>
+   
+  </div>
+</div>
+				</div>
+			<div class="col-md-3 col-sm-6 mt-4">
+				<div class="card CarCard">
+  <img src="Images/Car3.jpg" style="width:100%;" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+   <H4 class="card-text">
+		₹ 17 per/KM
+		</H4>
+    <h3 class="card-title">Toyoto Crysta</h3>
+   
+  </div>
+</div>
+
+			</div>
+			<div class="col-md-3 col-sm-6 mt-4">
+				<div class="card CarCard">
+  <img src="Images/Car4.jpg" style="width:100%;" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+   <H4 class="card-text">
+		₹ 17 per/KM
+		</H4>
+    <h3 class="card-title">Honda City</h3>
+   
+  </div>
+</div>
+				</div>
+					<a href="Cab.html" style="text-decoration:none;"><div class="CabBtn mt-5">
+  <div class="BtnContent">Explore More Cab</div>
+					</div></a>
+				
+
+					</div>
+				</div>
+			<div class="col-sm-1"></div>
+			</div>
+		<!---end of div for Car info--->
+		
+		<!---Div for process row-->
+		<Div class="row mt-5" style="background-color: #FFFFE0;">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+			<div class="row mt-5 text-center">
+			<h6 style="color:grey; font-family: cursive;">Three Steps From Us</h6>
+			<h1 style="font-family:Style Script;font-weight:bold;color:#F2A717;text-decoration: #F2A717 wavy underline;">Our Booking Process</h1>
+				<div class="col-sm-4">
+					<img src='Images/process1.gif' style="width:100%;"/>
+					<h5>1. Book Our Cab</h5>
+					</div>
+				<div class="col-sm-4">
+					<img src='Images/process2.gif' style="width:100%;"/>
+					<h5>2. Prepare Luggage</h5>
+					</div>
+				<div class="col-sm-4">
+					<img src='Images/process4.gif' style="width:100%;"/>
+					<h5>3. Ready To Go</h5><br><br>
+					</div>
+				</div>
+				</div>
+			<div class="col-sm-1"></div>
+			</div>
+		<!---End of Div for process row-->
+		
+		<!---div for nearby attraction info--->
+		<div class="row mt-5">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div class="row mt-5 text-center">
+					<h6 style="color:grey; font-family: cursive;">Discover Your Next Adventure</h6>
+			<h1 style="font-family:Style Script;font-weight:bold;color:#F2A717;text-decoration: #F2A717 wavy underline;">Our Nearby Attraction</h1>
+			
+			<div class="col-md-4 col-sm-12 mt-4">
+				<div class="card VisitCard">
+  <img src="Images/footer1.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+   <H4 class="card-text">
+		Ayodhya
+		</H4>
+   
+  </div>
+</div>
+				</div>
+			<div class="col-md-4 col-sm-12 mt-4">
+				<div class="card VisitCard">
+  <img src="Images/footer3.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+   <H4 class="card-text">
+		Varanasi
+		</H4>
+   
+  </div>
+</div>
+				</div>
+			<div class="col-md-4 col-sm-12 mt-4">
+				<div class="card VisitCard">
+  <img src="Images/footer10.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-center">
+   <H4 class="card-text">
+		Prayagraj
+   </H4>
+   
+  </div>
+</div>
+
+			</div>
+					<a href="Tour.html" style="text-decoration:none;"><div class="CabBtn mt-5 mb-5">
+  <div class="BtnContent">Explore Attraction</div>
+					</div></a>
+			
+
+					</div>
+				</div>
+			<div class="col-sm-1"></div>
+			</div>
+		<!---end of div for nearby attraction--->
+		
+		<!---div for hotel info-->
+		<div class="row mt-5" style="background-color: #FFFFE0;">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+		<div class="row mt-5">
+		<div class="col-lg-5 col-sm-12">
+			<h6 style="color:grey; font-family: cursive;">Book Best Hospitality Hotel</h6>
+			<h1 style="font-family:Style Script;font-weight:bold;color:#F2A717;text-decoration: #F2A717 wavy underline;">Experience Luxury Hotel</h1>
+			<h6 style="text-align:justify;margin-top:15px;line-height:20px;">We give the full guidance to find the best hotel with affordable price. We have different star rating hotel with different hospitality service.</h6>
+			<div class="row mt-2">
+			<div class="col-3">
+			<img src="Images/star4.png"/>
+			</div>
+			<div class="col-9">
+			<h4 style="font-family:cursive;font-weight:bold;margin-top:12px;">Two Star</h4>
+			</div>
+			</div>
+			<div class="row mt-3">
+			<div class="col-3">
+			<img src="Images/star3.png"/>
+			</div>
+			<div class="col-9">
+			<h4 style="font-family:cursive;font-weight:bold;margin-top:12px;">Three Star</h4>
+			</div>
+			</div>
+			
+			
+			
+			<div class="row mt-2">
+			<div class="col-3">
+			<img src="Images/star5.png"/>
+			</div>
+			<div class="col-9">
+			<h4 style="font-family:cursive;font-weight:bold;margin-top:12px;">Five Star</h4><br><br>
+			</div>
+			</div>
+		</div>
+		<div class="col-lg-1 col-sm-12"></div>
+		<div class="col-lg-6 col-sm-12">
+		<img src="Images/Hotel2.png" style="width:100%;"/>
+		</div>
+		</div>
+		</div>
+		<div class="col-sm-1"></div>
+		</div>
+		<!---end of div for hotel info-->
+		
+		<!--div for faqs-->
+		<div class="row mt-5">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<div class="row mt-5">
+					<h6 style="color:grey; font-family: cursive;text-align:center;">What people ask for us?</h6>
+			<h1 style="font-family:Style Script;text-align:center;font-weight:bold;color:#F2A717;text-decoration: #F2A717 wavy underline;">Our FAQs</h1>
+			
+<div class="col-sm-12 col-md-3 mt-4">
+<img src="Images/faqs.gif" style="width:100%;"/>
+</div>
+<div class="col-sm-12 mt-4 col-md-9">
+<div class="accordion" id="accordionExample">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+       <strong>1. Can I rent a car for a few weeks?
+      </strong>
+	  </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        
+Yes, you can rent us for a week.
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <strong>2. Can I hire a car for a weekend trip?
+      </strong>
+	  </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       Yes you can. However, it is advised to call before some day so that we can give you the desire ride.
+      
+      </div>
+    </div>
+  </div>
+  
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <strong>3. Do you have different type of cars for rental service?
+</strong>
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Yes we have different types of cars include:
+           <ul><li>SUVs</li>
+		   <li>Sedans</li>
+		   <li>Toyoto Crysta</li></ul>
+      </div>
+    </div>
+  </div>
+  
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        <strong>4. What are the operating hours of Saryu Travels?</strong>
+</button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        The operating hours of us 24*7.
+      </div>
+    </div>
+  </div>
+  
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+       <strong>5. Where is the office of Saryu Travels in Ayodhya?</strong>
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      The office of Saryu Travel in Ayodhya City near Ram Ghat Halt.
+	  </div>
+    </div>
+  </div>
+  
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        <strong>6. Do you provide the drives with the car?</strong>
+</button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       Yes, we also provide the drives.
+       </div>
+    </div>
+  </div>
+</div>
+</div>
+					</div>
+				</div>
+			<div class="col-sm-1"></div>
+			</div>
+		<!--end of div for faqs-->
+		
+	<!--div for testimonial row -->
+		<div class="row mt-5">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10 mt-5">
+			<div class='row text-center'>
+			<h6 style="color:grey; font-family: cursive;">Hear from Our Happy Clients</h6>
+			<h1 style="font-family:Style Script;font-weight:bold;color:#F2A717;text-decoration: #F2A717 wavy underline;">Customers' Testimonials</h1>
+			
+         <div class="card__container swiper">
+            <div class="card__content">
+               <div class="swiper-wrapper">
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/avatar-1.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+                        <h3 class="card__name">Sumit Singh</h3>
+                        <p class="card__description">
+                          Saryu Travels provided a memorable travel experience with excellent customer service, well-chosen accommodations, and engaging tours.
+                        </p>
+                     </div>
+                  </article>
+      
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/avatar-2.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+                        <h3 class="card__name">Ankoor Rai</h3>
+                        <p class="card__description">
+                         The tour guides were knowledgeable, friendly, and enthusiastic. They provided insightful information about the destinations.
+                        </p>
+                     </div>
+                  </article>
+      
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/avatar-3.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+                        <h3 class="card__name">Komal Roa</h3>
+                        <p class="card__description">
+                          The hotels provided were of high quality, with excellent amenities and service. The locations were convenient and safe. I enjoyed the Saryu Travels' Services.
+                        </p>
+                     </div>
+                  </article>
+      
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/avatar-4.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+                        <h3 class="card__name">Pakhi Deshmukh</h3>
+                        <p class="card__description">
+                           Saryu Travels provide the best services. The transportation was comfortable and punctual. The vehicle was clean and well-maintained.
+                        </p>
+                     </div>
+                  </article>
+
+                  <article class="card__article swiper-slide">
+                     <div class="card__image">
+                        <img src="assets/img/avatar-5.png" alt="image" class="card__img">
+                        <div class="card__shadow"></div>
+                     </div>
+      
+                     <div class="card__data">
+                        <h3 class="card__name">Sonali Yadav</h3>
+                        <p class="card__description">
+							The booking process was straightforward and intuitive. The website provided ample information about the itinerary and included high-quality photos.
+
+                        </p>
+                     </div>
+                  </article>
+               </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next">
+               <i class="ri-arrow-right-s-line"></i>
+            </div>
+            
+            <div class="swiper-button-prev">
+               <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+         </div>
+      
+				</div>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+<!--End first row--->
+
+<!--div upper image-->
+	<div class="row">
+		<div class="col-sm-12">
+			<img src="Images/travel.gif" style="width:100%;"/>
+			</div>
+		</div>
+<!--end of div upper image-->
+
+<!--div for footer-->
+	<div class="row" style="background-color:#C44200;">
+		<div class="p-5 col-lg-4">
+			<img src="Images/logo1.png" class="LogoImg"/>
+			<hr style="border:1px solid white;">
+		<h6 class="mt-4" style="color:white;text-align:justify;">Welcome to Saryu Travels, we are the best Tour & Travel Agency in Ayodhya City. Your comfort is our first priority. Are you ready to embark on your next unforgettable journey with Saryu Travels, we're passionate about crafting extraordinary travel experiences that leave you with memories to last a lifetime. </h6>
+			<h4 style="color:white;" class="mb-4 mt-4">Social Network</h4>
+				<i class="fa-brands fa-2x fa-instagram"></i>
+						<i class="fa-brands ms-2 fa-2x fa-whatsapp"></i>
+						<i class="fa-brands ms-2 fa-2x fa-facebook"></i>
+						<a href="https://www.justdial.com/Ayodhya/Saryu-Travel-Agency-Near-Ram-Ghat-Halt-Ayodhya-City/9999P5278-5278-220405124323-B3T6_BZDET" target='_blank' style='color:#212529;'>
+						<i class="fa-solid ms-2 fa-2x fa-j"></i>
+			<i class="fa-solid fa-2x fa-d"></i></a>
+						<i class="fa-solid  ms-2 fa-2x fa-envelope-circle-check"></i>	
+			</div>
+			<div class="p-5 col-lg-4">
+			<h4 style="color:white;" class='mt-4'>Nearby Destination</h4>
+			<!--first row for distination--->
+	<div class="row">
+				<div class="col-4">
+						<div class="FooterContainer mt-4">
+  <img src="Images/footer1.jpg" style="width:100%;" alt="Avatar" class="FooterImage">
+  <div class="FooterOverlay">
+    <div class="FooterText">Ayodhya</div>
+  </div>
+</div>
+						</div>
+		<div class="col-4">
+						<div class="FooterContainer mt-4">
+  <img src="Images/footer10.jpg" alt="Avatar" class="FooterImage" style="width:100%;">
+  <div class="FooterOverlay">
+    <div class="FooterText">Prayagraj</div>
+  </div>
+</div>
+					</div>
+				<div class="col-4">
+						<div class="FooterContainer mt-4">
+		<img src="Images/footer3.jpg" style='width:100%;' alt="Avatar" class="FooterImage">
+  <div class="FooterOverlay">
+    <div class="FooterText">Varanasi</div>
+  </div>
+</div>
+					</div>
+				</div>
+			<h4 style="color:white;" class="mb-4 mt-4">Keep Connect</h4>
+					
+						<a href="tel:07942691254" class="Footerlink">
+							<span style="color:white;">
+								<i class="fa-solid fa-phone"></i>
+								07942691254</span><br>
+						</a>
+						<a href="mailto:info@saryutravels.com" class="Footerlink"><span>
+						<i class="fa-solid fa-envelope"></i>
+							info@saryutravels.com
+						</span></br></a>
+						<a href="About.html" style="text-align:justify;" class="Footerlink"><span>
+						<i class="fa-solid fa-location-dot"></i>
+							Ayodhya City, Ayodhya - 224123 (Near Ram Ghat Halt)
+						</span><br></a>
+			</div>
+			<div class="p-5 col-lg-4">
+			
+						<h4 style="color:white;" class="mb-4 mt-4">Navigations</h4>
+						
+						
+							<a  class="Footerlink" href="index.html">
+						<h6 class="mt-4">&check; Home</h6>
+					</a>
+					<a  class="Footerlink"  href="About.html">
+						<h6>&check; About</h6>
+					</a>
+					<a class="Footerlink" href="Cab.html"> 
+						<h6>&check; Book Cabs</h6>
+					</a>
+					<a class="Footerlink" href="Tour.html"> 
+						<h6>&check; Tour Package</h6>
+					</a>
+					<a class="Footerlink" href="Hotel.html"> 
+						<h6>&check; Hotel Booking</h6>
+					</a>
+					<a class="Footerlink" href="Contact.html"> 
+						<h6>&check; Contact</h6>
+					</a>
+			</div>
+			
+		</div>
+		<div class="row px-5" style="background-color:#C44200;">
+		<hr>
+		<div class="col-md-12 col-sm-12">
+		<h6 style="color:white;text-align:center;">Copyright © 2024 All rights reserved &ensp;&ensp; &ensp;&ensp;Designed & Developed By:<a style="text-decoration:none;color:white;" href="https://www.techomind.com/" target='_blank'>Techomind</a></h6>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+<!--end div for footer-->	      
+  
+ <script>
+var curpage = 1;
+var sliding = false;
+var click = true;
+var left = document.getElementById("left");
+var right = document.getElementById("right");
+var pagePrefix = "slide";
+var pageShift = 500;
+var transitionPrefix = "circle";
+var svg = true;
+
+function leftSlide() {
+	if (click) {
+		if (curpage == 1) curpage = 5;
+		console.log("woek");
+		sliding = true;
+		curpage--;
+		svg = true;
+		click = false;
+		for (k = 1; k <= 4; k++) {
+			var a1 = document.getElementById(pagePrefix + k);
+			a1.className += " tran";
+		}
+		setTimeout(() => {
+			move();
+		}, 200);
+		setTimeout(() => {
+			for (k = 1; k <= 4; k++) {
+				var a1 = document.getElementById(pagePrefix + k);
+				a1.classList.remove("tran");
+			}
+		}, 1400);
+	}
+}
+
+function rightSlide() {
+	if (click) {
+		if (curpage == 4) curpage = 0;
+		console.log("woek");
+		sliding = true;
+		curpage++;
+		svg = false;
+		click = false;
+		for (k = 1; k <= 4; k++) {
+			var a1 = document.getElementById(pagePrefix + k);
+			a1.className += " tran";
+		}
+		setTimeout(() => {
+			move();
+		}, 200);
+		setTimeout(() => {
+			for (k = 1; k <= 4; k++) {
+				var a1 = document.getElementById(pagePrefix + k);
+				a1.classList.remove("tran");
+			}
+		}, 1400);
+	}
+}
+
+function move() {
+	if (sliding) {
+		sliding = false;
+		if (svg) {
+			for (j = 1; j <= 9; j++) {
+				var c = document.getElementById(transitionPrefix + j);
+				c.classList.remove("steap");
+				c.setAttribute("class", transitionPrefix + j + " streak");
+				console.log("streak");
+			}
+		} else {
+			for (j = 10; j <= 18; j++) {
+				var c = document.getElementById(transitionPrefix + j);
+				c.classList.remove("steap");
+				c.setAttribute("class", transitionPrefix + j + " streak");
+				console.log("streak");
+			}
+		}
+		setTimeout(() => {
+			for (i = 1; i <= 4; i++) {
+				if (i == curpage) {
+					var a = document.getElementById(pagePrefix + i);
+					a.className += " up1";
+				} else {
+					var b = document.getElementById(pagePrefix + i);
+					b.classList.remove("up1");
+				}
+			}
+			sliding = true;
+		}, 600);
+		setTimeout(() => {
+			click = true;
+		}, 1700);
+
+		setTimeout(() => {
+			if (svg) {
+				for (j = 1; j <= 9; j++) {
+					var c = document.getElementById(transitionPrefix + j);
+					c.classList.remove("streak");
+					c.setAttribute("class", transitionPrefix + j + " steap");
+				}
+			} else {
+				for (j = 10; j <= 18; j++) {
+					var c = document.getElementById(transitionPrefix + j);
+					c.classList.remove("streak");
+					c.setAttribute("class", transitionPrefix + j + " steap");
+				}
+				sliding = true;
+			}
+		}, 850);
+		setTimeout(() => {
+			click = true;
+		}, 1700);
+	}
+}
+
+left.onmousedown = () => {
+	leftSlide();
+};
+
+right.onmousedown = () => {
+	rightSlide();
+};
+
+document.onkeydown = e => {
+	if (e.keyCode == 37) {
+		leftSlide();
+	} else if (e.keyCode == 39) {
+		rightSlide();
+	}
+};
+
+//for codepen header
+// setTimeout(() => {
+// 	rightSlide();
+// }, 500);
+		</script>
+
+ <!--===============CarSlider SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== CarSlider MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+	  <!--Js File-->
+      <script src="Script.js"></script>
+</body>
+</html>

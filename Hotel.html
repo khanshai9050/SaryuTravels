@@ -1,0 +1,471 @@
+<html>
+	<head>
+		<!--cdn for bootstrap css-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+		<!---cdn for font awesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!--external css-->
+		<link href="Style.css" rel="stylesheet"/>
+		
+		<!--bootstrap js cdn--->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+		
+        <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+		<!--google font link-->
+		<link href='https://fonts.googleapis.com/css?family=Style Script' rel='stylesheet'>
+		<!--meta link--->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<!--preloader-->
+		<div id="preloader"></div>
+		<!--end preloader-->
+		
+		
+		
+			<!--div for top to up button-->
+<button onclick="topFunction()" id="myScrollToTopBtn" title="Go to top"><i class="fa-solid fa-arrows-up-to-line"></i></button>
+<!---end of top to up button--->
+
+<!--upper header-->
+<div class='container-fluid'>
+	<div class='row UpperHeader'>
+		<div class='col-7'>
+			<a href='tel:07942691254' class="fa-solid fa-phone Footerlink mt-2"></a>&ensp;
+			<a href='mailto:info@saryutravels.com' class="fa-solid fa-envelope Footerlink"></a>&ensp;
+			<a href='#' class="fa-brands fa-whatsapp Footerlink"></a>&ensp;
+			<a href='#' class="fa-brands fa-facebook Footerlink mt-3"></a>&ensp;
+		<a href='#' class="fa-brands fa-instagram Footerlink"></a>
+			</div>
+		<div class='col-5'>
+			<a href='Cab.html'><div class='btn btn-light mt-1' style='float:right;'><i class="fa-solid fa-thumbs-up"></i> Book Cab</div></a>
+			</div>
+		</div>
+	</div>
+<!--end of upper header-->
+
+	<!--- header-->
+		<div class="container-fluid sticky-top">
+					<!--navbar-->
+		<div class="row">
+			<div class=""  style="padding:0 !important">
+				<nav class="navbar navbar-expand-lg navbar-light" style="background:white;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+						<img src="Images/logo.png" class="LogoImg"/>
+						<!-- Offcanvas toggle button (visible on all screen sizes) -->
+						<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+							aria-controls="offcanvasExample">
+							<div class="burger" id="burger">
+								<div class="line1"></div>
+								<div class="line2"></div>
+								<div class="line3"></div>
+							</div>
+						</button>
+		
+		<!-- Navbar items -->
+						<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+							<div class="offcanvas-header">
+								<h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+								<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="About.html">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Cab.html">Car Rental</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Tour.html">Tour Plan</a>
+									</li>
+										<li class="nav-item">
+										<a class="nav-link active" href="Hotel.html">Hotel Booking</a>
+									</li>
+										<li class="nav-item">
+										<a class="nav-link active" href="Contact.html">Contact</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+		<div class='MenuGap'></div>
+						<!-- Navbar items (visible on larger screens) -->
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="index.html">Home&ensp;</a>
+									</li>
+									
+									<li class="nav-item">
+										<a class="nav-link active" href="About.html">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Cab.html">CarRental</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" href="Tour.html">TourPlan</a>
+									</li>
+										<li class="nav-item   selectedmenu">
+										<a class="nav-link active" href="Hotel.html">HotelBooking</a>
+									</li>
+										<li class="nav-item">
+										<a class="nav-link active" href="Contact.html">Contact</a>
+									</li>
+								</ul>
+						</div>
+				</nav>
+			</div>
+		</div>
+		</div>
+		<!--end of navbar-->
+
+<div class="container">
+	<!--div for first row-->
+	<div class="row mt-5">
+		<div class="col-sm-12">
+						<h6 style="color:grey; font-family: cursive;">Book Best Hospitality Hotel</h6>
+						<h1 style="font-family:Style Script;font-weight:bold;color:#F2A717;text-decoration: #F2A717 wavy underline;"> Experience Luxury Hotel</h1>
+			<h6 style="text-align:justify;margin-top:15px;line-height:25px;">We give the full guidance to find the best hotel with affordable price. We have different star rating hotel with different hospitality service.Nestled in the heart of the bustling city, the Hotel offers a perfect blend of luxury and comfort, promising an unforgettable stay for both leisure and business travelers.<br><br>
+				With its contemporary architecture and elegant interiors, the hotel provide luxury and comfortable rooms, each featuring plush bedding, modern amenities, and stunning views of the city. Guests can indulge in a culinary journey at our on-site Seaside Restaurant, where gourmet seafood dishes are served alongside panoramic ocean vistas, or unwind with a signature cocktail at the chic rooftop bar.
+				
+				</h6>
+			</div>
+		</div>
+		
+<!--end of div for first row-->
+
+<!--second hotel table row-->
+<div class="row mt-5">
+	<h1 style="font-family:Style Script;font-weight:bold;color:#F2A717;text-decoration: #F2A717 wavy underline;">2 Star Rating Hotels</h1>
+	<div class='col-md-8 col-sm-12'>
+		 <table class="table mt-4 table-bordered table-striped" style="width:100%;">
+                <!--table heading-->
+                <thead>
+                    <tr style="background:#F2A717;">
+                        <th>Tour Place</th>
+                        <th>Explore</th>
+                    </tr>
+                </thead>
+                <!--end of table heading-->
+
+                <!--table data-->
+                <tbody>
+				<!--first row of book-->
+                    <tr>
+                        <td>Ayodhya</td>
+                        <td>
+						<a href="https://www.google.com/travel/search?q=4%20star%20rating%20hotel%20in%20ayodhya&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqCwoJEgIDBDoDSU5S&qs=CAAgACgA&ap=KigKEgkv77u-OiM5QBGQEnGhQjVUQBISCfA_CQbTODlAEZAScbF3O1RAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQ7AM" target='_blank'>	
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                      
+                    </tr>
+                    <tr>
+                        <td>Lucknow</td>
+                        <td>
+							<a href='https://www.google.com/travel/search?q=4%20star%20rating%20hotel%20in%20lucknow&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqCwoJEgIDBDoDSU5S&qs=CAAgACgA&ap=KigKEgkv77u-OiM5QBGQEnGhQjVUQBISCfA_CQbTODlAEZAScbF3O1RAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQ_wI' target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+							</a>
+							</td>
+                    </tr>
+                    <tr>
+                        <td>Varanasi</td>
+                        <td>
+							<a href="https://www.google.com/travel/search?q=4%20star%20rating%20hotel%20in%20varanasi&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqCwoJEgIDBDoDSU5S&qs=CAAgACgA&ap=KigKEgkv77u-OiM5QBGQEnGhQjVUQBISCfA_CQbTODlAEZAScbF3O1RAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQwwM" target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                    </tr>
+					<tr>
+                        <td>Kanpur</td>
+                        <td>
+							<a href="https://www.google.com/travel/search?q=4%20star%20rating%20hotel%20in%20kanpur&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqCwoJEgIDBDoDSU5S&qs=CAAgACgA&ap=KigKEgkv77u-OiM5QBGQEnGhQjVUQBISCfA_CQbTODlAEZAScbF3O1RAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQygI" target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                    </tr>
+					<tr>
+                        <td>Chitrakoot</td>
+                        <td>
+							<a href="https://www.google.com/travel/search?q=4%20star%20rating%20hotel%20in%20chitrakoot&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqCgoIEgEDOgNJTlI&qs=CAAgACgA&ap=KigKEgkv77u-OiM5QBGQEnGhQjVUQBISCfA_CQbTODlAEZAScbF3O1RAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQmQI" target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                    </tr>
+					
+                </tbody>
+                <!--end of table data-->
+            </table>
+		</div>
+		
+	<div class='col-md-4 col-sm-12 HotelBookDiv'>
+	<img src="Images/hotel4.png" style="width:100%;"/></div>
+	</div>
+	<hr>
+	
+	<!--div for first hotel booking table-->
+<div class="row mt-5">
+	<h1 style="font-family:Style Script;font-weight:bold;color:#F2A717;text-decoration: #F2A717 wavy underline;text-align:center;">3 Star Rating Hotels</h1>
+	<div class='col-md-4 col-sm-12 HotelBookDiv'>
+	<img src="Images/hotel3.png" style="width:100%;"/></div>
+	<div class='col-md-8 col-sm-12'>
+		 <table class="table mt-4 table-bordered table-striped" style="width:100%;">
+                <!--table heading-->
+                <thead>
+                    <tr style="background:#F2A717;">
+                        <th>Tour Place</th>
+                        <th>Explore</th>
+                    </tr>
+                </thead>
+                <!--end of table heading-->
+
+                <!--table data-->
+                <tbody>
+				<!--first row of book-->
+                    <tr>
+                        <td>Ayodhya</td>
+                        <td>
+						<a href="https://www.google.com/travel/search?q=3%20star%20rating%20hotel%20in%20ayodhya&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCAoCCAMKAggDGhwSGhIUCgcI6A8QBRgUEgcI6A8QBRgVGAEyAhAAKgoKCBIBAzoDSU5S&qs=CAE4BlplMmOqAWAQASoXIhMzIHN0YXIgcmF0aW5nIGhvdGVsKAAyHxABIhvZrxpf6UqgImpavemVRHEwQhYfE3mCtEaVPXUyIhACIh4zIHN0YXIgcmF0aW5nIGhvdGVsIGluIGF5b2RoeWE&ap=KigKEgm4W4BamcM6QBG_eXFakYpUQBISCYKnGqrl2DpAEb95cWrGkFRAMABoAQ&ictx=111&ved=0CAAQ5JsGahcKEwi4pevq75iGAxUAAAAAHQAAAAAQVg" target='_blank'>	
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                      
+                    </tr>
+                    <tr>
+                        <td>Lucknow</td>
+                        <td>
+							<a href='https://www.google.com/travel/search?q=3%20star%20rating%20hotel%20in%20lucknow&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqCgoIEgEDOgNJTlI&qs=CAAgACgA&ap=KigKEgm4W4BamcM6QBG_eXFakYpUQBISCYKnGqrl2DpAEb95cWrGkFRAMABoAQ&ictx=111&ved=0CAAQ5JsGahcKEwjAgvXe8JiGAxUAAAAAHQAAAAAQVw' target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+							</a>
+							</td>
+                    </tr>
+                    <tr>
+                        <td>Varanasi</td>
+                        <td>
+							<a href="https://www.google.com/travel/search?q=3%20star%20rating%20hotel%20in%20varanasi&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqCgoIEgEDOgNJTlI&qs=CAAgACgA&ap=KigKEgm4W4BamcM6QBG_eXFakYpUQBISCYKnGqrl2DpAEb95cWrGkFRAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQgwE" target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                    </tr>
+					<tr>
+                        <td>Kanpur</td>
+                        <td>
+							<a href="https://www.google.com/travel/search?q=3%20star%20rating%20hotel%20in%20kanpur&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqCgoIEgEDOgNJTlI&qs=CAAgACgA&ap=KigKEgm4W4BamcM6QBG_eXFakYpUQBISCYKnGqrl2DpAEb95cWrGkFRAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQugE" target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                    </tr>
+					<tr>
+                        <td>Chitrakoot</td>
+                        <td>
+							<a href="https://www.google.com/travel/search?q=3%20star%20rating%20hotel%20in%20chitrakoot&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqCgoIEgEDOgNJTlI&qs=CAAgACgA&ap=KigKEgm4W4BamcM6QBG_eXFakYpUQBISCYKnGqrl2DpAEb95cWrGkFRAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQ_wE" target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                    </tr>
+					
+                </tbody>
+                <!--end of table data-->
+            </table>
+		</div>
+	</div>
+	<hr>
+<!--end of  first hotel table row-->
+	
+<!--div for third hotel table row-->
+<div class="row mt-5">
+	<h1 style="font-family:Style Script;font-weight:bold;color:#F2A717;text-decoration: #F2A717 wavy underline;">5 Star Rating Hotels</h1>		
+	
+	<div class='col-md-8 col-sm-12'>
+		 <table class="table mt-4 table-bordered table-striped" style="width:100%;">
+                <!--table heading-->
+                <thead>
+                    <tr style="background:#F2A717;">
+                        <th>Tour Place</th>
+                        <th>Explore</th>
+                    </tr>
+                </thead>
+                <!--end of table heading-->
+
+                <!--table data-->
+                <tbody>
+				<!--first row of book-->
+                    <tr>
+                        <td>Ayodhya</td>
+                        <td>
+						<a href="https://www.google.com/travel/search?q=5%20star%20rating%20hotel%20in%20ayodhya&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqDAoKEgMDBAU6A0lOUg&qs=CAAgACgA&ap=KigKEgkv77u-OiM5QBGQEnGhQjVUQBISCfA_CQbTODlAEZAScbF3O1RAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQ6wU" target='_blank'>	
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                      
+                    </tr>
+                    <tr>
+                        <td>Lucknow</td>
+                        <td>
+							<a href='https://www.google.com/travel/search?q=5%20star%20rating%20hotel%20in%20lucknow&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqDAoKEgMDBAU6A0lOUg&qs=CAAgACgA&ap=KigKEgkv77u-OiM5QBGQEnGhQjVUQBISCfA_CQbTODlAEZAScbF3O1RAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQsgU' target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+							</a>
+							</td>
+                    </tr>
+                    <tr>
+                        <td>Varanasi</td>
+                        <td>
+							<a href="https://www.google.com/travel/search?q=5%20star%20rating%20hotel%20in%20varanasi&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqDAoKEgMDBAU6A0lOUg&qs=CAAgACgA&ap=KigKEgkv77u-OiM5QBGQEnGhQjVUQBISCfA_CQbTODlAEZAScbF3O1RAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQ9gQ" target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                    </tr>
+					<tr>
+                        <td>Kanpur</td>
+                        <td>
+							<a href="https://www.google.com/travel/search?q=5%20star%20rating%20hotel%20in%20kanpur&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqDAoKEgMDBAU6A0lOUg&qs=CAAgACgA&ap=KigKEgkv77u-OiM5QBGQEnGhQjVUQBISCfA_CQbTODlAEZAScbF3O1RAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQvgQ" target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                    </tr>
+					<tr>
+                        <td>Chitrakoot</td>
+                        <td>
+							<a href="https://www.google.com/travel/search?q=5%20star%20rating%20hotel%20in%20chitrakoot&g2lb=2503771%2C2503781%2C4814050%2C4874190%2C4893075%2C4899571%2C4899572%2C4965990%2C10210222%2C72277293%2C72302247%2C72317059%2C72406588%2C72414906%2C72421566%2C72462234%2C72470899%2C72471280%2C72472051%2C72473841%2C72485658%2C72486593%2C72494250%2C72512010%2C72513422%2C72513513%2C72520081%2C72536387%2C72538597%2C72543209%2C72549171%2C72556203%2C72570850%2C72582843%2C72582855%2C72591073%2C72599014%2C72602734&hl=en-IN&gl=in&ssta=1&ts=CAESCgoCCAMKAggDEAAaHBIaEhQKBwjoDxAFGBQSBwjoDxAFGBUYATICEAAqCwoJEgIDBDoDSU5S&qs=CAAgACgA&ap=KigKEgkv77u-OiM5QBGQEnGhQjVUQBISCfA_CQbTODlAEZAScbF3O1RAMABoAQ&ictx=111&ved=0CAAQ5JsGahgKEwi4pevq75iGAxUAAAAAHQAAAAAQkAQ" target='_blank'>
+							<div class='btn btn BtnHotelBook'>Book Now</div>
+						</a>
+							</td>
+                    </tr>
+					
+                </tbody>
+                <!--end of table data-->
+            </table>
+		</div>
+
+<div class='col-md-4 col-sm-12 HotelBookDiv'>
+	<img src="Images/hotel5.png" style="width:100%;"/>
+	</div>
+	</div>
+	<hr>
+<!--div for second hotel table row-->
+
+<!--end of div for second hotel table row-->
+
+	</div>
+
+<!--div upper image-->
+<div class='container-fluid'>
+	<div class="row">
+		<div class="col-sm-12">
+			<img src="Images/travel.gif" style="width:100%;"/>
+			</div>
+		</div>
+<!--end of div upper image-->
+
+<!--div for footer-->
+	<div class="row" style="background-color:#C44200;">
+		<div class="p-5 col-lg-4">
+			<img src="Images/logo1.png" class="LogoImg"/>
+			<hr style="border:1px solid white;">
+		<h4 style="color:white;" class='mt-4'>Our DMCs</h4>
+			<!--first row for distination--->
+	<div class="row">
+				<div class="col-4">
+						<div class="FooterContainer mt-4">
+  <img src="Images/footer1.jpg" style="width:100%;" alt="Avatar" class="FooterImage">
+  <div class="FooterOverlay">
+    <div class="FooterText">Ayodhya</div>
+  </div>
+</div>
+						</div>
+		<div class="col-4">
+						<div class="FooterContainer mt-4">
+  <img src="Images/footer10.jpg" alt="Avatar" class="FooterImage" style="width:100%;">
+  <div class="FooterOverlay">
+    <div class="FooterText">Prayagraj</div>
+  </div>
+</div>
+					</div>
+				<div class="col-4">
+						<div class="FooterContainer mt-4">
+		<img src="Images/footer3.jpg" style='width:100%;' alt="Avatar" class="FooterImage">
+  <div class="FooterOverlay">
+    <div class="FooterText">Varanasi</div>
+  </div>
+</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="p-5 col-lg-4">
+			
+			<h4 style="color:white;" class="mb-4 mt-4">Keep Connect</h4>
+					
+						<a href="tel:07942691254" class="Footerlink">
+							<span style="color:white;">
+								<i class="fa-solid fa-phone"></i>
+								07942691254</span><br>
+						</a>
+						<a href="mailto:info@saryutravels.com" class="Footerlink"><span>
+						<i class="fa-solid fa-envelope"></i>
+							info@saryutravels.com
+						</span></br></a>
+						<a href="About.html" style="text-align:justify;" class="Footerlink"><span>
+						<i class="fa-solid fa-location-dot"></i>
+							Ayodhya City, Ayodhya - 224123 (Near Ram Ghat Halt)
+						</span><br></a>
+						<h4 style="color:white;" class="mb-4 mt-4">Social Network</h4>
+				<i class="fa-brands fa-2x fa-instagram"></i>
+						<i class="fa-brands ms-2 fa-2x fa-whatsapp"></i>
+						<i class="fa-brands ms-2 fa-2x fa-facebook"></i>
+						<a href="https://www.justdial.com/Ayodhya/Saryu-Travel-Agency-Near-Ram-Ghat-Halt-Ayodhya-City/9999P5278-5278-220405124323-B3T6_BZDET" target='_blank' style='color:#212529;'>
+						<i class="fa-solid ms-2 fa-2x fa-j"></i>
+			<i class="fa-solid fa-2x fa-d"></i></a>
+						<i class="fa-solid  ms-2 fa-2x fa-envelope-circle-check"></i>
+			</div>
+			
+			<div class="p-5 col-lg-4">
+			
+						<h4 style="color:white;" class="mb-4 mt-4">Navigations</h4>
+						
+						
+							<a  class="Footerlink" href="index.html">
+						<h6 class="mt-4">&check; Home</h6>
+					</a>
+					<a  class="Footerlink"  href="About.html">
+						<h6>&check; About</h6>
+					</a>
+					<a class="Footerlink" href="Cab.html"> 
+						<h6>&check; Book Cabs</h6>
+					</a>
+					<a class="Footerlink" href="Tour.html"> 
+						<h6>&check; Tour Package</h6>
+					</a>
+					<a class="Footerlink" href="Hotel.html"> 
+						<h6>&check; Hotel Booking</h6>
+					</a>
+					<a class="Footerlink" href="Contact.html"> 
+						<h6>&check; Contact</h6>
+					</a>
+			</div>
+			
+		</div>
+		<div class="row px-5" style="background-color:#C44200;">
+		<hr>
+		<div class="col-md-12 col-sm-12">
+		<h6 style="color:white;text-align:center;">Copyright © 2024 All rights reserved &ensp;&ensp; &ensp;&ensp;Designed & Developed By:<a style="text-decoration:none;color:white;" href="https://www.techomind.com/" target='_blank'>Techomind</a></h6>
+		</div>
+		
+		</div>
+		</div>
+		
+	</div>
+<!--end div for footer-->
+		<!--Js File-->
+		
+		<script src="Script.js"></script>
+	</body>
+</html>
